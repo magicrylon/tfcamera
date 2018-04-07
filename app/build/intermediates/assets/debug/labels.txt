@@ -1,0 +1,8 @@
+cd
+drum memory
+floppy disk
+hard disk
+punched card
+ram
+tape memory
+u disk
