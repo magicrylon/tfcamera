@@ -16,7 +16,12 @@ limitations under the License.
 package com.example.android.tflitecamerademo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+import cn.fly2cloud.activity.ActivityShowHistory;
 
 /** Main {@code Activity} class for the Camera app. */
 public class CameraActivity extends Activity {
@@ -31,5 +36,25 @@ public class CameraActivity extends Activity {
           .replace(R.id.container, Camera2BasicFragment.newInstance())
           .commit();
     }
+  }
+
+  @Override
+  public boolean onCreateOptionsMenu(Menu menu) {
+    getMenuInflater().inflate(R.menu.main_menu, menu);
+    return true;
+  }
+
+  @Override
+  public boolean onOptionsItemSelected(MenuItem item) {
+    switch(item.getItemId()){
+      case R.id.mi_show_history:
+        Intent intent = new Intent(CameraActivity.this, ActivityShowHistory.class);
+        startActivity(intent);
+        break;
+      default:
+          break;
+    }
+
+    return true;
   }
 }

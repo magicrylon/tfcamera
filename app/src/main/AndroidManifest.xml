@@ -37,6 +37,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="cn.fly2cloud.activity.ActivityShowHistory"
+            android:theme="@style/Theme.AppCompat.Light"/>
     </application>
 
 </manifest>

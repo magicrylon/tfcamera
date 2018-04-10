@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Androidworkspace\\tensorflow-for-poets-2\\android\\tflite\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "D:\\Androidworkspace\\tfcamera\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.2.0.aar\\059ea2457f06b41d42bcda67adc9a905\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
@@ -33,24 +33,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Androidworkspace\\tensorflow-for-poets-2\\android\\tflite\\app\\src\\main\\res\\values-sw600dp\\template-dimens.xml",
-                    "from": {
-                        "startLines": "20,21",
-                        "startColumns": "4,4",
-                        "startOffsets": "656,724",
-                        "endColumns": "67,67",
-                        "endOffsets": "719,787"
-                    },
-                    "to": {
-                        "startLines": "18,19",
-                        "startColumns": "4,4",
-                        "startOffsets": "1170,1238",
-                        "endColumns": "67,67",
-                        "endOffsets": "1233,1301"
-                    }
-                },
-                {
-                    "source": "D:\\Androidworkspace\\tensorflow-for-poets-2\\android\\tflite\\app\\src\\main\\res\\values-sw600dp\\template-styles.xml",
+                    "source": "D:\\Androidworkspace\\tfcamera\\app\\src\\main\\res\\values-sw600dp\\template-styles.xml",
                     "from": {
                         "startLines": "18",
                         "startColumns": "4",
@@ -66,6 +49,23 @@
                         "endLines": "29",
                         "endColumns": "12",
                         "endOffsets": "1791"
+                    }
+                },
+                {
+                    "source": "D:\\Androidworkspace\\tfcamera\\app\\src\\main\\res\\values-sw600dp\\template-dimens.xml",
+                    "from": {
+                        "startLines": "20,21",
+                        "startColumns": "4,4",
+                        "startOffsets": "656,724",
+                        "endColumns": "67,67",
+                        "endOffsets": "719,787"
+                    },
+                    "to": {
+                        "startLines": "18,19",
+                        "startColumns": "4,4",
+                        "startOffsets": "1170,1238",
+                        "endColumns": "67,67",
+                        "endOffsets": "1233,1301"
                     }
                 }
             ]

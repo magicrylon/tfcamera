@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Androidworkspace\\tensorflow-for-poets-2\\android\\tflite\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "D:\\Androidworkspace\\tfcamera\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.2.0.aar\\059ea2457f06b41d42bcda67adc9a905\\res\\values-v21\\values-v21.xml",

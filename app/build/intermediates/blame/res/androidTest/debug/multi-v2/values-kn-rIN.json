@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Androidworkspace\\tensorflow-for-poets-2\\android\\tflite\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-kn-rIN\\values-kn-rIN.xml",
+            "outputFile": "D:\\Androidworkspace\\tfcamera\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-kn-rIN\\values-kn-rIN.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.2.0.aar\\c3cae1762cf29c82003fd733f21d7b38\\res\\values-kn-rIN\\values-kn-rIN.xml",

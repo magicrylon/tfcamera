@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tflite.iml" filepath="$PROJECT_DIR$/tflite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tfcamera.iml" filepath="$PROJECT_DIR$/tfcamera.iml" />
+      <module fileurl="file://D:\Androidworkspace\tfcamera\tflite.iml" filepath="D:\Androidworkspace\tfcamera\tflite.iml" />
     </modules>
   </component>
 </project>

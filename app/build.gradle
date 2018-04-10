@@ -40,6 +40,7 @@ repositories {
     maven {
         url 'https://google.bintray.com/tensorflow'
     }
+
 }
 
 dependencies {
@@ -56,4 +57,6 @@ dependencies {
     compile 'org.tensorflow:tensorflow-lite:+'
 
     testCompile 'junit:junit:4.12'
+
+
 }

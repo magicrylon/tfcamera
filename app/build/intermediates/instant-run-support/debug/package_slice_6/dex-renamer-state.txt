@@ -1,4 +1,4 @@
-#Sat Apr 07 16:33:36 CST 2018
-base.0=D\:\\Androidworkspace\\tensorflow-for-poets-2\\android\\tflite\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+#Mon Apr 09 20:25:14 CST 2018
+base.0=D\:\\Androidworkspace\\tfcamera\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
 path.0=classes.dex
 renamed.0=classes.dex
