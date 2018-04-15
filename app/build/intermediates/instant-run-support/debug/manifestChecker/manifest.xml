@@ -51,6 +51,7 @@
         <activity
             android:name="cn.fly2cloud.activity.ActivityShowHistory"
             android:theme="@style/Theme.AppCompat.Light" />
+        <activity android:name="cn.fly2cloud.base.BaseActivity" />
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"

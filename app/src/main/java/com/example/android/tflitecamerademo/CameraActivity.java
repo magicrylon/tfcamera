@@ -22,6 +22,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import cn.fly2cloud.activity.ActivityShowHistory;
+import cn.fly2cloud.base.BaseActivity;
 
 /** Main {@code Activity} class for the Camera app. */
 public class CameraActivity extends Activity {
