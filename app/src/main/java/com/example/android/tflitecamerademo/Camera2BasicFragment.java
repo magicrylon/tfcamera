@@ -20,8 +20,10 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
@@ -56,6 +58,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.dd.processbutton.iml.ActionProcessButton;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -65,9 +70,15 @@ import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
+import cn.fly2cloud.activity.ActivitySearchBaike;
+import cn.fly2cloud.fragment.FragmentSearchBaike;
+
 /** Basic fragments for the Camera. */
 public class Camera2BasicFragment extends Fragment
     implements FragmentCompat.OnRequestPermissionsResultCallback {
+
+    //TODO
+    private FragmentTransaction mTransaction;
 
   /** Tag for the {@link Log}. */
   private static final String TAG = "TfLiteCameraDemo";
@@ -81,7 +92,7 @@ public class Camera2BasicFragment extends Fragment
   private final Object lock = new Object();
   private boolean runClassifier = false;
   private boolean checkedPermissions = false;
-  private TextView textView;
+ private TextView textView;
   private ImageClassifier classifier;
 
   /** Max preview width that is guaranteed by Camera2 API */
@@ -203,13 +214,48 @@ public class Camera2BasicFragment extends Fragment
    * @param text The message to show
    */
   private void showToast(final String text) {
+
     final Activity activity = getActivity();
     if (activity != null) {
       activity.runOnUiThread(
           new Runnable() {
             @Override
             public void run() {
+                //TODO
               textView.setText(text);
+              textView.setOnClickListener(new View.OnClickListener() {
+                  @Override
+                  public void onClick(View view) {
+                      Log.d("hzzz",ImageClassifier.JUMP_NAME);
+                      Intent intent = new Intent(Camera2BasicFragment.this.getActivity(), ActivitySearchBaike.class);
+                      intent.putExtra("jumpName",ImageClassifier.JUMP_NAME);
+                      stopBackgroundThread();
+                      closeCamera();
+                      startActivity(intent);
+                  }
+              });
+
+
+
+                //Log.d("hzzz",ImageClassifier.JUMP_PRO+"");
+             /* if(ImageClassifier.JUMP_PRO > 0.095f){
+
+
+                  Intent intent = new Intent(Camera2BasicFragment.this.getActivity(), ActivitySearchBaike.class);
+                  intent.putExtra("jumpName",ImageClassifier.JUMP_NAME);
+                  stopBackgroundThread();
+                  closeCamera();
+                  startActivity(intent);
+                  Camera2BasicFragment.this.getActivity().finish();
+                 stopBackgroundThread();
+                  closeCamera();
+                  mTransaction = getFragmentManager()
+                          .beginTransaction()
+                          .replace(R.id.container, FragmentSearchBaike.newInstance());
+
+                  mTransaction.commit();
+              }*/
+
             }
           });
     }
@@ -289,6 +335,8 @@ public class Camera2BasicFragment extends Fragment
   public void onViewCreated(final View view, Bundle savedInstanceState) {
     textureView = (AutoFitTextureView) view.findViewById(R.id.texture);
     textView = (TextView) view.findViewById(R.id.text);
+
+
   }
 
   /** Load the model and labels. */

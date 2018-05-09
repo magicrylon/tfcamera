@@ -39,6 +39,10 @@ import org.tensorflow.lite.Interpreter;
 /** Classifies images with Tensorflow Lite. */
 public class ImageClassifier {
 
+  //标记跳转的Tag TODO
+  public static String JUMP_NAME = "";
+  public static float JUMP_PRO;
+
   /** Tag for the {@link Log}. */
   private static final String TAG = "TfLiteCameraDemo";
 
@@ -49,7 +53,7 @@ public class ImageClassifier {
   private static final String LABEL_PATH = "labels.txt";
 
   /** Number of results to show in the UI. */
-  private static final int RESULTS_TO_SHOW = 3;
+  private static final int RESULTS_TO_SHOW = 1;
 
   /** Dimensions of inputs. */
   private static final int DIM_BATCH_SIZE = 1;
@@ -205,6 +209,7 @@ public class ImageClassifier {
   /** Prints top-K labels, to be shown in UI as the results. */
   private String printTopKLabels() {
     for (int i = 0; i < labelList.size(); ++i) {
+
       sortedLabels.add(
           new AbstractMap.SimpleEntry<>(labelList.get(i), labelProbArray[0][i]));
       if (sortedLabels.size() > RESULTS_TO_SHOW) {
@@ -216,6 +221,11 @@ public class ImageClassifier {
     for (int i = 0; i < size; ++i) {
       Map.Entry<String, Float> label = sortedLabels.poll();
       textToShow = String.format("\n%s: %4.2f",label.getKey(),label.getValue()) + textToShow;
+      //TODO
+      if(0==i){
+        JUMP_NAME=label.getKey();
+        JUMP_PRO=label.getValue();
+      }
     }
     return textToShow;
   }

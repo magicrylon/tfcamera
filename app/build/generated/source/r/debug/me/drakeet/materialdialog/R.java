@@ -9,10 +9,10 @@ package me.drakeet.materialdialog;
 public final class R {
     public static final class color {
         public static final int black_de = 0x7f05001f;
-        public static final int card_background = 0x7f050028;
-        public static final int card_shadow = 0x7f050029;
-        public static final int lite_blue = 0x7f050044;
-        public static final int window_background = 0x7f050068;
+        public static final int card_background = 0x7f05002a;
+        public static final int card_shadow = 0x7f05002b;
+        public static final int lite_blue = 0x7f05004b;
+        public static final int window_background = 0x7f050071;
     }
     public static final class dimen {
         public static final int action_button_height = 0x7f06004a;
@@ -38,15 +38,15 @@ public final class R {
         public static final int message = 0x7f080056;
         public static final int message_content_root = 0x7f080057;
         public static final int message_content_view = 0x7f080058;
-        public static final int title = 0x7f0800a0;
+        public static final int title = 0x7f0800a3;
     }
     public static final class layout {
-        public static final int layout_material_dialog = 0x7f0a002e;
+        public static final int layout_material_dialog = 0x7f0a0030;
     }
     public static final class string {
         public static final int action_settings = 0x7f0c001f;
         public static final int app_name = 0x7f0c0020;
-        public static final int hello_world = 0x7f0c0026;
+        public static final int hello_world = 0x7f0c0027;
     }
     public static final class style {
         public static final int ActionButton = 0x7f0d0000;

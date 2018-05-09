@@ -21,7 +21,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import cn.fly2cloud.activity.ActivitySearchBaike;
 import cn.fly2cloud.activity.ActivityShowHistory;
+import cn.fly2cloud.activity.ActivityShowModel;
 import cn.fly2cloud.base.BaseActivity;
 
 /** Main {@code Activity} class for the Camera app. */
@@ -47,9 +49,19 @@ public class CameraActivity extends Activity {
 
   @Override
   public boolean onOptionsItemSelected(MenuItem item) {
+    Intent intent = null;
     switch(item.getItemId()){
       case R.id.mi_show_history:
-        Intent intent = new Intent(CameraActivity.this, ActivityShowHistory.class);
+        intent = new Intent(CameraActivity.this, ActivityShowHistory.class);
+        startActivity(intent);
+        break;
+      case R.id.mi_search_baike:
+        intent = new Intent(CameraActivity.this, ActivitySearchBaike.class);
+        startActivity(intent);
+        break;
+
+      case R.id.mi_show_model:
+        intent = new Intent(CameraActivity.this, ActivityShowModel.class);
         startActivity(intent);
         break;
       default:

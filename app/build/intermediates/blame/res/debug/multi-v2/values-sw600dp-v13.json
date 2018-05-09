@@ -23,24 +23,14 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.2.0.aar\\c3cae1762cf29c82003fd733f21d7b38\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,193,263,337,413,472,543",
-                        "endColumns": "68,68,69,73,75,58,70,67",
-                        "endOffsets": "119,188,258,332,408,467,538,606"
-                    }
-                },
-                {
                     "source": "D:\\Androidworkspace\\tfcamera\\app\\src\\main\\res\\values-sw600dp\\template-styles.xml",
                     "from": {
                         "startLines": "18",
                         "startColumns": "4",
-                        "startOffsets": "621",
+                        "startOffsets": "639",
                         "endLines": "22",
                         "endColumns": "12",
-                        "endOffsets": "861"
+                        "endOffsets": "883"
                     },
                     "to": {
                         "startLines": "25",
@@ -52,13 +42,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\a6ee0f39c7e3832123be6acecf5bb001\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    }
+                },
+                {
                     "source": "D:\\Androidworkspace\\tfcamera\\app\\src\\main\\res\\values-sw600dp\\template-dimens.xml",
                     "from": {
                         "startLines": "20,21",
                         "startColumns": "4,4",
-                        "startOffsets": "656,724",
+                        "startOffsets": "676,745",
                         "endColumns": "67,67",
-                        "endOffsets": "719,787"
+                        "endOffsets": "739,808"
                     },
                     "to": {
                         "startLines": "18,19",
